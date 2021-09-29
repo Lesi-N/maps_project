@@ -12,7 +12,7 @@ def read_data():
     Reads locations file
     :return:
     '''
-    lines = open('locations.txt', mode='r', encoding='utf-8').readlines()
+    my_lines = open('locations.txt', mode='r', encoding='utf-8').readlines()
     films = [line.strip().split('\t') for line in lines[14:]]
     return films
 
